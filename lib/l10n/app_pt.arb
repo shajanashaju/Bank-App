@@ -1,0 +1,208 @@
+{
+    "language": "português",
+
+   "logo": "Logotipo",
+
+   "easy_way_to": "Maneira fácil de administrar seu dinheiro",
+
+   "get_started": "Iniciar",
+
+   "skip": "Pular",
+
+   "welcome": "Bem-vindo",
+
+   "pin_number": "Digite seu PIN de quatro dígitos para fazer login",
+
+   "forget_pin": "ESQUECER PIN",
+
+   "login_to_account": "Entrar na conta",
+
+   "welcome_back": "Bem vindo de volta",
+
+   "your_balance": "Seu balanço",
+
+   "transfer": "Transferir",
+
+   "e_store": "E_store",
+
+   "pay": "Pagamento de contas",
+
+   "refer": "Referir",
+
+   "more": "Mais",
+
+   "send_money": "Enviar dinheiro",
+
+   "see_more": "Envie mais",
+
+   "transactions_history": "Histórico de transações",
+
+   "send": "Enviar",
+
+   "hy_here": "Olá aqui",
+
+   "card_usage": "Uso do cartão",
+
+   "due_date": "Data de vencimento",
+
+   "unread_messages": "4 mensagens não lidas",
+
+   "total_card_limit": "Limite total do cartão",
+
+   "available_card_limit": "Limite de cartão disponível",
+
+   "pin_based_tr": "Transação baseada em PIN",
+
+   "domestic": "Transação Doméstica",
+
+   "international": "Transação Internacional",
+
+   "contactless": "Transação sem contato",
+
+   "hurry": "Pressa! Seu",
+
+   "total_rewards": "Recompensas",
+
+   "flat": "30% de desconto",
+
+   "lorem_ipsum": "Lorem Tipsetting de texto muito fictício",
+
+   "bill_pay": "Pagamento de contas",
+
+   "categories": "Categorias",
+
+   "search": "Categoria de pesquisa",
+
+   "electricity": "Eletricidade",
+
+   "ecommerce": "E comércio",
+
+   "mobile": "Dados móveis",
+
+   "travel": "Viagem",
+
+   "tv": "TV e Internet",
+
+   "pharmacy": "Farmacia",
+
+   "ticket": "Bilhete",
+
+   "hotel": "Hotel",
+
+   "flight": "Voo",
+
+   "all_contacts": "Todos os contatos",
+
+   "personal": "Informações pessoais",
+
+   "account_number": "Número de conta",
+
+   "username": "Nome de usuário",
+
+   "email": "Email",
+
+   "mobile_number": "Número de telemóvel",
+
+   "address": "Endereço",
+
+   "park": "Park Avenue 2nd",
+
+   "edit_informations": "Editar informações",
+
+   "face": "Desbloqueio de rosto",
+
+   "password": "Bloqueio de senha",
+
+   "finger": "Impressão digital",
+
+   "login_pin": "Altere o pino de login",
+
+   "edit_personal": "Edite informações pessoais",
+
+   "enter_new_user": "Digite um novo usuário",
+
+   "phone_number": "Número de telefone",
+
+   "enter_email": "Digite email",
+
+   "enter_phone_number": "Digite o número de telefone",
+
+   "optional": "Opcional",
+
+   "enter_new_value": "Insira um novo valor",
+
+    "save_informations": "Guardar información",
+
+    "hey_here": "Ei aqui",
+
+    "new_card": "Adicionar cartão",
+
+    "add_new_card": "Agregar nueva tarjeta",
+
+    "name_on_card": "Nome no cartão",
+
+    "enter_name": "Insira o nome",
+
+    "card_number": "Número do cartão",
+
+    "enter_card_number": "Digite o número do cartão",
+
+    "expiry_date": "lData de vaidade (dd/yy)",
+
+    "expiry_date_box": "Data de validade",
+
+    "cvv": "CVV",
+
+    "cvv_nmuber": "CVV Número",
+
+    "send_money_to": "Envie dinheiro para,",
+
+    "amount": "Quantia",
+
+    "enter_amount": "Insira o valor",
+
+    "transfer_type": "Tipo de transferência",
+
+    "instant_transfer": "Transferência instantânea",
+
+    "email_optional": "E-mail opcional)",
+
+    "note_optional": "Nota (opcional)",
+
+    "write": "Escreva algo",
+
+    "recent_contacts": "Contatos recentes",
+
+     "less": "Menos",
+
+     "your_recents": "seu recente",
+
+     "transactions": "Transações",
+
+     "all_transactions": "todas as transacções",
+
+     "debit": "Débito",
+
+     "credit": "Crédito",
+
+     "march": "Marchar",
+
+     "this_week": "Essa semana",
+
+     "last_week": "La semana pasada",
+
+     "natasha": "Natasha Terez Gantar solicitou um pagamento de $ 1200",
+
+     "notifications": "Notificações",
+
+     "hurry": "Pressa!",
+
+     "transfer_successfully": "Transferência concluída com sucesso para Natasha Terez",
+
+     "view_transfer": "Exibir detalhes da transferência",
+
+     "next": "Próxima"
+
+
+    
+}

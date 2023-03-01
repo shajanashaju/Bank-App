@@ -1,0 +1,522 @@
+{
+    "language": "English",
+    "@language":{
+      "description": "The current Language"
+    },
+
+    "logo": "Logo",
+    "@logo": {
+      "description": " logo text"
+    },
+
+    "easy_way_to": "Easy way to manage your money",
+    "@easy_way_to": {
+      "description": "easy way to text"
+    },
+
+
+    "get_started": "Get Started",
+    "@get_started": {
+      "description": "get started text"
+    },
+
+    "skip": "Skip",
+    "@skip": {
+      "description": "skip text"
+    },
+
+    "welcome": "Welcome",
+    "@welcome": {
+      "description": "welcome text"
+    },
+
+    "pin_number": "Enter your four digit pin to login",
+    "@pin_number": {
+      "description": "pin number text"
+    },
+
+    "forget_pin": "FORGET PIN",
+    "@forget_pin": {
+      "description": "forget pin text"
+    },
+
+    "login_to_account": "Login to Account",
+    "@login_to_account": {
+      "description": "login to account text"
+    },
+
+    "welcome_back": "Welcome Back",
+    "@welcome_back": {
+      "description": "welcome back text"
+    },
+
+    "your_balance": "Your Balance",
+    "@your_balance": {
+      "description": "your balance text"
+    },
+
+    "transfer": "Transfer",
+    "@transfer": {
+      "description": "transfer text"
+    },
+
+    "e_store": "E_store",
+    "@e_store": {
+      "description": "e store text"
+    },
+
+    "pay": "Bill Pay",
+    "@pay": {
+      "description": "pay pay text"
+    },
+
+    "refer": "Refer",
+    "@refer": {
+      "description": "refer text"
+    },
+
+    "more": "More",
+    "@more": {
+      "description": "more text"
+    },
+
+    "send_money": "Send Money",
+    "@send_money": {
+      "description": "send money text"
+    },
+
+    "see_more": "See More",
+    "@see_more": {
+      "description": "see more text"
+    },
+
+    "transactions_history": "Transactions History",
+    "@transactions_history": {
+      "description": "transactions history text"
+    },
+
+    "send": "Send",
+    "@send": {
+      "description": "send text"
+    },
+
+    "hy_here": "Hy Here",
+    "@hy_here": {
+      "description": "hy here text"
+    },
+
+    "card_usage": "Card Usage",
+    "@card_usage": {
+      "description": "Card usage text"
+    },
+
+    "due_date": "Due Date",
+    "@due_date": {
+      "description": "due date text"
+    },
+
+    "unread_messages": "4 Unread Messages",
+    "@unread_messages": {
+      "description": "unread meassages text"
+    },
+
+    "total_card_limit": "Total Card Limit",
+    "@total_card_limit": {
+      "description": "total card limit text"
+    },
+
+    "available_card_limit": "Available Card Limit",
+    "@available_card_limit": {
+      "description": "available text"
+    },
+
+    "pin_based_tr": "Pin Based Transaction",
+    "@pin_based_tr": {
+      "description": "pin based transaction text"
+    },
+
+    "domestic": "Domestic Transaction",
+    "@domestic": {
+      "description": "domestic text"
+    },
+
+    "international": "International Transaction",
+    "@international": {
+      "description": "international text"
+    },
+
+    "contactless": "Contactless Transaction",
+    "@contactless": {
+      "description": "contactless text"
+    },
+
+    "hurry": "Hurry! Your",
+    "@hurry": {
+      "description": "hurry text"
+    },
+
+    "total_rewards": "Total Rewards",
+    "@total_rewards": {
+      "description": "total rewards text"
+    },
+
+    
+    "flat": "Flat 30% off",
+    "@flat": {
+      "description": "flat text"
+    },
+
+    "lorem_ipsum": "Lorem ipsum dummy text typesetting",
+    "@lorem_ipsum": {
+      "description": "lorem ipsum text"
+    },
+
+    "bill_pay": "Bill Pay",
+    "@bill_pay": {
+      "description": "bill pay text"
+    },
+
+    "categories": "Categories",
+    "@categories": {
+      "description": "Categories text"
+    },
+
+    "search": "Search Category",
+    "@search": {
+      "description": "search text"
+    },
+
+    "electricity": "Electricity",
+    "@electricity": {
+      "description": "electricity ext"
+    },
+
+    "ecommerce": "E_commerce",
+    "@ecommerce": {
+      "description": "ecommerce text"
+    },
+
+    "mobile": "Mobile & Data",
+    "@mobile": {
+      "description": "mobile text"
+    },
+
+    "travel": "Travel",
+    "@travel": {
+      "description": "travel text"
+    },
+
+    "tv": "Tv & Internet",
+    "@tv": {
+      "description": "tv text"
+    },
+
+    "pharmacy": "Pharmacy",
+    "@Pharmacy": {
+      "description": "Pharmacy text"
+    },
+
+    "ticket": "Ticket",
+    "@ticket": {
+      "description": "ticket text"
+    },
+
+    "hotel": "Hotel",
+    "@hotel": {
+      "description": "hotel text"
+    },
+
+    "flight": "Flight",
+    "@flight": {
+      "description": "flight text"
+    },
+
+    "all_contacts": "All Contacts",
+    "@all_contacts": {
+      "description": "all contacts text"
+    },
+
+    "personal": "Personal Information",
+    "@personal": {
+      "description": "personal text"
+    },
+
+    "account_number": "Account Number",
+    "@account_number": {
+      "description": "account text"
+    },
+
+    "username": "User Name",
+    "@username": {
+      "description": "user text"
+    },
+
+    "email": "Email",
+    "@email": {
+      "description": "email text"
+    },
+
+    "mobile_number": "Mobile Number",
+    "@mobile_number": {
+      "description": "mobile text"
+    },
+
+    "address": "Address",
+    "@address": {
+      "description": "address text"
+    },
+
+    "park": "Park Avenue 2nd",
+    "@park": {
+      "description": "park text"
+    },
+
+    "edit_informations": "Edit Informations",
+    "@edit_informations": {
+      "description": "edit informations text"
+    },
+
+    "face": "Face Unlock",
+    "@face": {
+      "description": "face text"
+    },
+
+    "password": "Password Lock",
+    "@password": {
+      "description": "password text"
+    },
+
+    "finger": "Finger Print",
+    "@finger": {
+      "description": "finger text"
+    },
+
+    "login_pin": "Change Login Pin",
+    "@login_pin": {
+      "description": "change pin text"
+    },
+
+    "edit_personal": "Edit Personal Information",
+    "@login_pin": {
+      "description": "change pin text"
+    },
+
+    "enter_new_user": "Enter New User",
+    "@enter_new_user": {
+      "description": "enter new user text"
+    },
+
+    "enter_email": "Enter Email",
+    "@enter_email": {
+      "description": "enter email text"
+    },
+
+    "enter_phone_number": "Enter Phone Number",
+    "@enter_phone_number": {
+      "description": "enter phone number text"
+    },
+
+    "phone_number": "Phone Number",
+    "@phone_number": {
+      "description": "phone number text"
+    },
+
+    "optional": "Optional",
+    "@optional": {
+      "description": "optional text"
+    },
+
+    "enter_new_value": "Enter New Value",
+    "@enter_new_value": {
+      "description": "enter new value text"
+    },
+
+    "save_informations": "Save Informations",
+    "@save_informations": {
+      "description": "save informations text"
+    },
+
+    "hey_here": "Hey Here",
+    "@hey_here": {
+      "description": "hey here text"
+    },
+
+    "new_card": "New Card",
+    "@new_card": {
+      "description": "new card text"
+    },
+
+    "add_new_card": " Add New Card",
+    "@add_new_card": {
+      "description": " add new card text"
+    },
+
+    "name_on_card": "Name On Card",
+    "@name_on_board": {
+      "description": "name on card text"
+    },
+
+    "enter_name": "Enter Name",
+    "@enter_name": {
+      "description": "enter name text"
+    },
+
+    "card_number": "Card Number",
+    "@card_number": {
+      "description": "card number text"
+    },
+
+    "enter_card_number": "Enter Card Number",
+    "@enter_card_number": {
+      "description": "enter card number text"
+    },
+
+    "expiry_date": "Expiry Date (DD/YY)",
+    "@expiry_date": {
+      "description": "expiry date text"
+    },
+
+    "expiry_date_box": "Exp Date",
+    "@expiry_date_box": {
+      "description": "exp date text"
+    },
+
+    "cvv": "CVV",
+    "@cvv": {
+      "description": "cvv text"
+    },
+
+    "cvv_nmuber": "CVV Number",
+    "@cvv_nmuber": {
+      "description": "cvv number text"
+    },
+
+    "send_money_to": "Send Money to,",
+    "@send_money_to": {
+      "description": "send money text"
+    },
+
+    "amount": "Amount",
+    "@amount": {
+      "description": "amount text"
+    },
+
+    "enter_amount": "Enter Amount",
+    "@enter_amount": {
+      "description": "enter amount text"
+    },
+
+    "transfer_type": "Transfer Type",
+    "@transfer_type": {
+      "description": "Transfer type text"
+    },
+
+    "instant_transfer": "Instant Transfer",
+    "@instant_transfer": {
+      "description": "instant transfer text"
+    },
+
+    "email_optional": "Email (Optional)",
+    "@email_optional": {
+      "description": "email optional text"
+    },
+
+    "note_optional": "Note (Optional)",
+    "@note_optional": {
+      "description": "note optional text"
+    },
+
+    "write": "Write Something",
+    "@write": {
+      "description": "write text"
+    },
+
+    "recent_contacts": "Recent Contacts",
+    "@recent_contacts": {
+      "description": "recent contacts text"
+    },
+
+    "less": "Less",
+    "@less": {
+      "description": "less text"
+    },
+
+    "less": "Less",
+    "@less": {
+      "description": "less text"
+    },
+
+    "your_recents": "Your Recent",
+    "@your_recents": {
+      "description": "your recent text"
+    },
+
+    "transactions": "Transactions",
+    "@transactions": {
+      "description": "transactions text"
+    },
+
+    "all_transactions": "All Transactions",
+    "@all_transactions": {
+      "description": "all transactions text"
+    },
+
+    "debit": "Debit",
+    "@debit": {
+      "description": "debit text"
+    },
+
+    "credit": "Credit",
+    "@credit": {
+      "description": "credit text"
+    },
+
+    "march": "march",
+    "@march": {
+      "description": "march text"
+    },
+
+    "this_week": "This Week",
+    "@this_week": {
+      "description": "this week text"
+    },
+
+    "last_week": "Last Week",
+    "@last_week": {
+      "description": "last text"
+    },
+
+    "natasha": "Natasha Terez Gantar requested a payment for $1200",
+    "@natasha": {
+      "description": "natasha text"
+    },
+
+    "notifications": "Notifications",
+    "@notifications": {
+      "description": "notifications text"
+    },
+
+    "hurry": "Hurry",
+    "@hurry": {
+      "description": "hurry text"
+    },
+
+    "transfer_successfully": "Transfer Successfully completed to Natasha Terez",
+    "@transfer_successfully": {
+      "description": "transfer successfully text"
+    },
+
+    "view_transfer": "View Transfer Details",
+    "@view_transfer": {
+      "description": "view transfer text"
+    },
+
+    "next": "Next",
+    "@next": {
+      "description": "next text"
+    }
+
+    
+
+}
+

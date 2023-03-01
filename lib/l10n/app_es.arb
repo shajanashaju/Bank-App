@@ -1,0 +1,209 @@
+{
+    "language": "español",
+   
+    "logo": "Logo",
+
+    "easy_way_to": "Manera fácil de administrar su dinero",
+
+    "get_started": "Empezar",
+
+    "skip": "Saltar",
+    
+    "welcome": "Bienvenida",
+
+    "pin_number": "Ingrese su PIN de cuatro dígitos para iniciar sesión",
+
+    "forget_pin": "OLVIDAR PIN",
+
+    "login_to_account": "Iniciar sesión en la cuenta",
+
+    "welcome_back": "Bienvenido de nuevo",
+
+    "your_balance": "Tu balance",
+
+    "transfer": "Transferir",
+
+    "e_store": "E_tienda",
+
+    "pay": "pagar",
+
+    "refer": "Referirse",
+
+    "more": "Más",
+
+    "send_money": "Enviar dinero",
+
+    "see_more": "Envía más",
+
+    "transactions_history": "Historial de transacciones",
+
+    "send": "Enviar",
+
+    "hy_here": "Hola aqui",
+
+    "card_usage": "Uso de la tarjeta",
+
+    "due_date": "Fecha de vencimiento",
+
+    "unread_messages": "4 mensajes no leídos",
+
+    "total_card_limit": "Límite total de tarjetas",
+
+    "available_card_limit": "Límite de tarjeta disponible",
+
+    "pin_based_tr": "Transacción basada en PIN",
+
+    "domestic": "Transacción Nacional",
+
+    "international": "Transacción Internacional",
+
+    "contactless": "Transacción sin contacto",
+
+    "hurry": "Pressa! Seu",
+
+    "total_rewards": "Recompensas",
+
+    "flat": "30% de descuento",
+
+    "lorem_ipsum": "Lorem de texto muy ficticio tipografía",
+
+    "bill_pay": "Pago de facturas",
+
+   "categories": "Categorías",
+
+   "search": "Categoría de búsqueda",
+
+   "electricity": "Electricidad",
+
+   "ecommerce": "Y comercio",
+
+   "mobile": "Datos móviles",
+
+   "travel": "Viajar",
+
+   "tv": "TV e Internet",
+
+   "pharmacy": "Farmacia",
+
+   "ticket": "Boleto",
+
+   "hotel": "Hotel",
+
+   "flight": "Vuelo",
+
+   "all_contacts": "Todos los contactos",
+
+   "personal": "Informacion personal",
+
+   "account_number": "Número de cuenta",
+
+   "username": "Nombre de usuario",
+
+   "email": "correo ",
+
+   "mobile_number": "Número de PHO",
+
+   "address": "DIRECCIÓN",
+
+   "park": "Park Avenue 2nd",
+
+   "edit_informations": "editar informacion",
+
+   "face": "Desbloqueo de la cara",
+
+   "password": "Bloqueo de contraseña",
+
+   "finger": "Huella dactilar",
+
+   "login_pin": "Cambiar el pin de inicio de sesión",
+
+   "edit_personal": "Editar información personal",
+
+   "enter_new_user": "Ingrese un nuevo usuario",
+
+   "enter_email": "Ingrese correo electrónico",
+
+   "phone_number": "Número de teléfono",
+
+   "enter_phone_number": "Ingresa número telefónico",
+
+   "optional": "Opcional",
+
+   "enter_new_value": "Ingrese un nuevo valor",
+
+    "save_informations": "Guardar información",
+
+    "hey_here": "Hola aquí",
+
+    "add_new_card": "Agregar tarjeta",
+
+    "new_card": "Nueva tarjeta",
+
+    "name_on_card": "Nombre en la tarjeta",
+
+    "enter_name": "Ingrese su nombre",
+
+    "add_new_card": "Agregar nueva tarjeta",
+
+    "card_number": "Número de tarjeta",
+
+    "enter_card_number": "Ingrese el número de tarjeta",
+
+    "expiry_date": "Exp Fecha (DD/YY)",
+
+    "expiry_date_box": "Fecha de EXP",
+
+    "cvv": "CVV",
+
+    "cvv_nmuber": "CVV Número",
+
+    "send_money_to": "Enviar dinero a",
+
+    "amount": "Cantidad",
+
+    "enter_amount": "Ingresar la cantidad",
+
+    "transfer_type": "Tipo de transferencia",
+
+    "instant_transfer": "Transferencia instantánea",
+
+    "email_optional": "Email (opcional)",
+
+    "note_optional": "Nota (opcional)",
+
+    "write": "Escribe algo",
+
+    "recent_contacts": "Contactos recientes",
+
+     "less": "Menos",
+
+     "your_recents": "Tu reciente",
+
+     "transactions": "Actas",
+
+     "all_transactions": "Todas las transacciones",
+
+     "debit": "Débito",
+
+     "credit": "Crédito",
+
+     "march": "Marzo",
+
+     "this_week": "Esta semana",
+
+     "last_week": "La semana pasada",
+
+     "natasha": "Natasha Terez Gantar solicitó unapago por $1200",
+
+     "notifications": "Notificaciones",
+
+     "hurry": "Apurarse!",
+
+     "transfer_successfully": "Transferencia completada con éxito a Natasha Terez",
+
+     "view_transfer": "Ver detalles de la transferencia",
+
+     "next": "Próxima"
+
+    
+}
