@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
         final provider = Provider.of<LocalProvider>(context);
 
         return MaterialApp.router(
-          title: 'Bank App',
+          title: 'E-Pay App',
           theme: AppTheme.lightTheme,
           themeMode: ThemeMode.light,
           debugShowCheckedModeBanner: false,

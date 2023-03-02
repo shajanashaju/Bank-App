@@ -4,7 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../router/router.gr.dart';
+import '../../router/router.gr.dart';
 
 class CardSettingScreen extends StatefulWidget {
   const CardSettingScreen({super.key});
@@ -26,13 +26,9 @@ class _CardSettingScreenState extends State<CardSettingScreen> {
             expandedHeight: context.sW() / 6,
             // floating: true,
             pinned: true,
-            // toolbarHeight: context.sW() / 4,
+            toolbarHeight: context.sW() / 6,
             automaticallyImplyLeading: false,
-            // leadingWidth: context.sW() / 6,
-            // leading: Padding(
-            //   padding: EdgeInsets.all(8.0),
-            //   child:
-            // ),
+
             title: Padding(
               padding: EdgeInsets.symmetric(horizontal: context.sW() / 10),
               child: Row(
@@ -111,101 +107,6 @@ class _CardSettingScreenState extends State<CardSettingScreen> {
                 ),
               ),
             ],
-            // flexibleSpace: FlexibleSpaceBar(
-            //   expandedTitleScale: 1,
-            //   titlePadding: EdgeInsets.only(
-            //     left: context.sW() / 16,
-            //     right: context.sW() / 16,
-            //     bottom: context.sW() / 30,
-            //   ),
-            //   collapseMode: CollapseMode.parallax,
-            //   background: Padding(
-            //     padding: EdgeInsets.only(
-            //       left: context.sW() / 15,
-            //       right: context.sW() / 16,
-            //       top: context.sW() / 40,
-            //     ),
-            //     child: Column(
-            //       children: [
-            //         SafeArea(
-            //           child: Row(
-            //             mainAxisAlignment: MainAxisAlignment.center,
-            //             children: [
-            //               SizedBox(
-            //                 height: context.sW() / 10,
-            //                 width: context.sW() / 10,
-            //                 child: ClipRRect(
-            //                   borderRadius: BorderRadius.circular(10),
-            //                   child: Image.asset(
-            //                     'assets/images/image1.jpg',
-            //                     fit: BoxFit.cover,
-            //                   ),
-            //                 ),
-            //               ),
-            //               SizedBox(
-            //                 width: context.sW() / 30,
-            //               ),
-            //               Column(
-            //                 crossAxisAlignment: CrossAxisAlignment.start,
-            //                 children: [
-            //                   Text(
-            //                     // 'Hy Here',
-            //                     AppLocalizations.of(context)!.hy_here,
-            //                     style: Theme.of(context).textTheme.subtitle2,
-            //                   ),
-            //                   Text(
-            //                       // 'Send Money',
-            //                       AppLocalizations.of(context)!.send_money,
-            //                       style: Theme.of(context)
-            //                           .textTheme
-            //                           .subtitle1
-            //                           ?.copyWith(fontSize: 22, height: 1)),
-            //                 ],
-            //               ),
-            //               SizedBox(
-            //                 width: context.sW() / 4,
-            //               ),
-            //               Stack(
-            //                 children: [
-            //                   GestureDetector(
-            //                     onTap: () {
-            //                       AutoRouter.of(context)
-            //                           .push(const NotificationScreenRoute());
-            //                     },
-            //                     child: Container(
-            //                       width: context.sW() / 10,
-            //                       height: context.sW() / 10,
-            //                       decoration: const BoxDecoration(
-            //                         color: Color.fromARGB(255, 0, 0, 0),
-            //                         shape: BoxShape.circle,
-            //                       ),
-            //                       child: const Icon(
-            //                         Icons.notifications_none_outlined,
-            //                         color: Colors.white,
-            //                         size: 22,
-            //                       ),
-            //                     ),
-            //                   ),
-            //                   SizedBox(
-            //                     height: context.sW() / 20,
-            //                     child: Container(
-            //                       width: context.sW() / 50,
-            //                       height: context.sW() / 50,
-            //                       decoration: BoxDecoration(
-            //                           shape: BoxShape.circle,
-            //                           color: Colors.red,
-            //                           border: Border.all(color: Colors.white)),
-            //                     ),
-            //                   ),
-            //                 ],
-            //               ),
-            //             ],
-            //           ),
-            //         ),
-            //       ],
-            //     ),
-            //   ),
-            // ),
           ),
           SliverToBoxAdapter(
             child: Column(
@@ -536,7 +437,7 @@ class _CardSettingScreenState extends State<CardSettingScreen> {
                     children: [
                       Container(
                         alignment: Alignment.centerLeft,
-                        height: context.sW() / 3.5,
+                        // height: context.sW() / 4,
                         width: context.sW(),
                         decoration: BoxDecoration(
                             color: Colors.white,

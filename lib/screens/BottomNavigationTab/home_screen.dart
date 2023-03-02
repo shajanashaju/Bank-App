@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:bankapp/context.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import '../../widgets/debit_card.dart';
+import '../../widgets/profileiconcard.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -15,103 +18,88 @@ class HomeScreen extends StatelessWidget {
       slivers: [
         SliverAppBar(
           titleSpacing: 0,
-          expandedHeight: context.sW() / 5,
-
-          floating: false,
+          expandedHeight: context.sW() / 6,
+          // floating: true,
           pinned: true,
-          // toolbarHeight: context.sW() / 4,
+          toolbarHeight: context.sW() / 6,
           automaticallyImplyLeading: false,
-          flexibleSpace: FlexibleSpaceBar(
-            expandedTitleScale: 1,
-            titlePadding: EdgeInsets.only(
-              left: context.sW() / 16,
-              right: context.sW() / 16,
-              bottom: context.sW() / 30,
+
+          title: Padding(
+            padding: EdgeInsets.symmetric(horizontal: context.sW() / 10),
+            child: Row(
+              children: [
+                SizedBox(
+                  height: context.sW() / 10,
+                  width: context.sW() / 10,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Image.asset(
+                      'assets/images/image1.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: context.sW() / 45,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      // 'Welcome Back',
+                      AppLocalizations.of(context)!.welcome_back,
+                      style: Theme.of(context).textTheme.subtitle2,
+                    ),
+                    Text('John Deo',
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyText2
+                            ?.copyWith(height: 1)),
+                  ],
+                ),
+              ],
             ),
-            collapseMode: CollapseMode.parallax,
-            background: Padding(
-              padding: EdgeInsets.only(
-                left: context.sW() / 11,
-                right: context.sW() / 16,
-                top: context.sW() / 40,
-              ),
-              child: Column(
+          ),
+          actions: [
+            Padding(
+              padding: EdgeInsets.symmetric(
+                  horizontal: context.sW() / 10, vertical: context.sW() / 50),
+              child: Stack(
                 children: [
-                  SafeArea(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                          height: context.sW() / 10,
-                          width: context.sW() / 10,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: Image.asset(
-                              'assets/images/image1.jpg',
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: context.sW() / 20,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              // 'Welcome Back',
-                              AppLocalizations.of(context)!.welcome_back,
-                              style: Theme.of(context).textTheme.subtitle2,
-                            ),
-                            Text('John Deo',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyText2
-                                    ?.copyWith(height: 1)),
-                          ],
-                        ),
-                        SizedBox(width: context.sW() / 4),
-                        Stack(
-                          children: [
-                            GestureDetector(
-                              onTap: () {
-                                AutoRouter.of(context)
-                                    .push(const NotificationScreenRoute());
-                              },
-                              child: Container(
-                                width: context.sW() / 10,
-                                height: context.sW() / 10,
-                                decoration: const BoxDecoration(
-                                  color: Color.fromARGB(255, 0, 0, 0),
-                                  shape: BoxShape.circle,
-                                ),
-                                child: const Icon(
-                                  Icons.notifications_none_outlined,
-                                  color: Colors.white,
-                                  size: 22,
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: context.sW() / 20,
-                              child: Container(
-                                width: context.sW() / 50,
-                                height: context.sW() / 50,
-                                decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: Colors.red,
-                                    border: Border.all(color: Colors.white)),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
+                  GestureDetector(
+                    onTap: () {
+                      AutoRouter.of(context)
+                          .push(const NotificationScreenRoute());
+                    },
+                    child: Container(
+                      width: context.sW() / 10,
+                      height: context.sW() / 10,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.notifications_none_outlined,
+                        color: Colors.white,
+                        size: 22,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: context.sW() / 20,
+                    child: Container(
+                      width: context.sW() / 50,
+                      height: context.sW() / 50,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.red,
+                          border: Border.all(color: Colors.white)),
                     ),
                   ),
                 ],
               ),
             ),
-          ),
+          ],
         ),
         SliverToBoxAdapter(
           child: Column(
@@ -157,157 +145,26 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Container(
-                      height: context.sW() / 3,
-                      width: context.sW() / 1.8,
-                      decoration: BoxDecoration(
-                          gradient: const RadialGradient(
-                            radius: 1,
-                            colors: [
-                              Color(0xFF3C3C3C),
-                              Colors.black,
-                            ],
-                          ),
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: context.sW() / 20,
-                        ),
-                        child: Column(
-                          children: [
-                            SizedBox(
-                              height: context.sW() / 8,
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text('Debit Card',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                  Text('Visa',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                ],
-                              ),
-                            ),
-                            Text('2423   3581   9503   2412',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyText1
-                                    ?.copyWith(
-                                        fontSize: 13, color: Colors.white)),
-                            SizedBox(
-                              height: context.sW() / 7,
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text('John Deo',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                  Text('Exp 21/24',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                    const DebitCard(
+                      cardname: 'Debit Card',
+                      name: 'John Deo',
+                      visa: 'Visa',
+                      expdate: 'Exp 21/24',
+                      cardnumber: '2423 3581 9503 2412',
                     ),
                     SizedBox(
                       width: context.sW() / 20,
                     ),
-                    Container(
-                      height: context.sW() / 3,
-                      width: context.sW() / 1.8,
-                      decoration: BoxDecoration(
-                          gradient: const RadialGradient(
-                            radius: 1,
-                            colors: [
-                              Color(0xFF3C3C3C),
-                              Colors.black,
-                            ],
-                          ),
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: context.sW() / 20,
-                        ),
-                        child: Column(
-                          children: [
-                            SizedBox(
-                              height: context.sW() / 8,
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text('Debit Card',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                  Text('Visa',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                ],
-                              ),
-                            ),
-                            Text('2423   3581   9503   2412',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyText1
-                                    ?.copyWith(
-                                        fontSize: 13, color: Colors.white)),
-                            SizedBox(
-                              height: context.sW() / 7,
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text('John Deo',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                  Text('Exp 20/24',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle2
-                                          ?.copyWith(
-                                              fontSize: 11,
-                                              color: Colors.white)),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    )
+                    const DebitCard(
+                      cardname: 'Debit Card',
+                      name: 'John Deo',
+                      visa: 'Visa',
+                      expdate: 'Exp 21/24',
+                      cardnumber: '2423 3581 9503 2412',
+                    ),
+                    SizedBox(
+                      width: context.sW() / 20,
+                    ),
                   ],
                 ),
               ),
@@ -368,152 +225,42 @@ class HomeScreen extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Column(
-                              children: [
-                                Container(
-                                    width: context.sW() / 8,
-                                    height: context.sW() / 8,
-                                    decoration: BoxDecoration(
-                                        color: const Color(0xFFD3E1FF),
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                    child: const Icon(
-                                      Icons.transform_outlined,
-                                      color: Colors.black,
-                                      size: 18,
-                                    )),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
+                            ProfileIconCard(
+                              iconName:
                                   // 'Transfer',
                                   AppLocalizations.of(context)!.transfer,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(fontSize: 10),
-                                ),
-                              ],
+                              iconSymbol: Icons.transform_outlined,
+                              click: () {},
                             ),
-                            SizedBox(
-                              width: context.sW() / 60,
-                            ),
-                            Column(
-                              children: [
-                                Container(
-                                    width: context.sW() / 8,
-                                    height: context.sW() / 8,
-                                    decoration: BoxDecoration(
-                                        color: const Color(0xFFD3E1FF),
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                    child: const Icon(
-                                      Icons.local_grocery_store_outlined,
-                                      color: Colors.black,
-                                      size: 18,
-                                    )),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
+                            ProfileIconCard(
+                              iconName:
                                   // 'E-store',
                                   AppLocalizations.of(context)!.e_store,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(fontSize: 10),
-                                ),
-                              ],
+                              iconSymbol: Icons.local_grocery_store_outlined,
+                              click: () {},
                             ),
-                            SizedBox(
-                              width: context.sW() / 60,
-                            ),
-                            Column(
-                              children: [
-                                Container(
-                                    width: context.sW() / 8,
-                                    height: context.sW() / 8,
-                                    decoration: BoxDecoration(
-                                        color: const Color(0xFFD3E1FF),
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                    child: const Icon(
-                                      Icons.payment,
-                                      color: Colors.black,
-                                      size: 18,
-                                    )),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
+                            ProfileIconCard(
+                              iconName:
                                   // 'Bill Pay',
-                                  AppLocalizations.of(context)!.pay,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(fontSize: 10),
-                                ),
-                              ],
+                                  AppLocalizations.of(context)!.bill_pay,
+                              iconSymbol: Icons.payment,
+                              click: () {},
                             ),
-                            SizedBox(
-                              width: context.sW() / 60,
-                            ),
-                            Column(
-                              children: [
-                                Container(
-                                    width: context.sW() / 8,
-                                    height: context.sW() / 8,
-                                    decoration: BoxDecoration(
-                                        color: const Color(0xFFD3E1FF),
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                    child: const Icon(
-                                      Icons.attach_money_outlined,
-                                      color: Colors.black,
-                                      size: 18,
-                                    )),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
+                            ProfileIconCard(
+                              iconName:
                                   // 'Refer',
                                   AppLocalizations.of(context)!.refer,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(fontSize: 10),
-                                ),
-                              ],
+                              iconSymbol: Icons.attach_money_outlined,
+                              click: () {},
                             ),
-                            SizedBox(
-                              width: context.sW() / 60,
-                            ),
-                            Column(
-                              children: [
-                                Container(
-                                    width: context.sW() / 8,
-                                    height: context.sW() / 8,
-                                    decoration: BoxDecoration(
-                                        color: Colors.black,
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                    child: const Icon(
-                                      Icons.transform_outlined,
-                                      color: Colors.white,
-                                      size: 18,
-                                    )),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
-                                  'More',
-                                  // AppLocalizations.of(context)!.more,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(fontSize: 10),
-                                ),
-                              ],
+                            ProfileIconCard(
+                              iconName:
+                                  //  'More',
+                                  AppLocalizations.of(context)!.more,
+                              iconSymbol: Icons.transform_outlined,
+                              bgColor: Colors.black,
+                              iconColor: Colors.white,
+                              click: () {},
                             ),
                           ],
                         ),
@@ -566,158 +313,40 @@ class HomeScreen extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Column(
-                              children: [
-                                GestureDetector(
-                                  onTap: () {
-                                    AutoRouter.of(context)
-                                        .push(const SendMoneyScreenRoute());
-                                  },
-                                  child: Container(
-                                      width: context.sW() / 8,
-                                      height: context.sW() / 8,
-                                      decoration: BoxDecoration(
-                                          color: Colors.black,
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                      child: const Icon(
-                                        Icons.add,
-                                        color: Colors.white,
-                                        size: 18,
-                                      )),
-                                ),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
+                            ProfileIconCard(
+                              iconName:
                                   // 'Send',
                                   AppLocalizations.of(context)!.send,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(fontSize: 10),
-                                ),
-                              ],
+                              iconSymbol: Icons.add,
+                              bgColor: Colors.black,
+                              click: () {
+                                AutoRouter.of(context)
+                                    .push(const SendMoneyScreenRoute());
+                              },
                             ),
-                            SizedBox(
-                              width: context.sW() / 60,
+                            ProfileIconCard(
+                              iconName: 'Natasha',
+                              // AppLocalizations.of(context)!.e_store,
+                              iconSymbol: Icons.local_grocery_store_outlined,
+                              bgImage: 'assets/images/image1.jpg', click: () {},
                             ),
-                            Column(
-                              children: [
-                                SizedBox(
-                                  width: context.sW() / 8,
-                                  height: context.sW() / 8,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'assets/images/image1.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
-                                  'Natasha',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 10,
-                                          color: const Color(0xFF8A8A8E)),
-                                ),
-                              ],
+                            ProfileIconCard(
+                              iconName: 'Natasha',
+                              // AppLocalizations.of(context)!.e_store,
+                              iconSymbol: Icons.local_grocery_store_outlined,
+                              bgImage: 'assets/images/image2.jpg', click: () {},
                             ),
-                            SizedBox(
-                              width: context.sW() / 60,
+                            ProfileIconCard(
+                              iconName: 'Natasha',
+                              // AppLocalizations.of(context)!.e_store,
+                              iconSymbol: Icons.local_grocery_store_outlined,
+                              bgImage: 'assets/images/image3.jpg', click: () {},
                             ),
-                            Column(
-                              children: [
-                                SizedBox(
-                                  width: context.sW() / 8,
-                                  height: context.sW() / 8,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'assets/images/image2.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
-                                  'Catherine',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 10,
-                                          color: const Color(0xFF8A8A8E)),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: context.sW() / 60,
-                            ),
-                            Column(
-                              children: [
-                                SizedBox(
-                                  width: context.sW() / 8,
-                                  height: context.sW() / 8,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'assets/images/image5.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
-                                  'Tony ger',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 10,
-                                          color: const Color(0xFF8A8A8E)),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: context.sW() / 60,
-                            ),
-                            Column(
-                              children: [
-                                SizedBox(
-                                  width: context.sW() / 8,
-                                  height: context.sW() / 8,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'assets/images/image4.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: context.sW() / 80,
-                                ),
-                                Text(
-                                  'john tez',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 10,
-                                          color: const Color(0xFF8A8A8E)),
-                                ),
-                              ],
+                            ProfileIconCard(
+                              iconName: 'Natasha',
+                              // AppLocalizations.of(context)!.e_store,
+                              iconSymbol: Icons.local_grocery_store_outlined,
+                              bgImage: 'assets/images/image4.jpg', click: () {},
                             ),
                           ],
                         ),
@@ -1057,6 +686,9 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: context.sW() / 4,
               ),
             ],
           ),

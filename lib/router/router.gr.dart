@@ -15,11 +15,11 @@ import 'package:auto_route/auto_route.dart' as _i17;
 import 'package:flutter/material.dart' as _i18;
 import 'package:flutter/src/widgets/framework.dart' as _i19;
 
-import '../BottomNavigationTab/card_setting_screen.dart' as _i13;
-import '../BottomNavigationTab/home_screen.dart' as _i12;
-import '../BottomNavigationTab/profile_screen.dart' as _i14;
-import '../BottomNavigationTab/reward_screen.dart' as _i15;
-import '../BottomNavigationTab/setting_screen.dart' as _i16;
+import '../screens/BottomNavigationTab/card_setting_screen.dart' as _i13;
+import '../screens/BottomNavigationTab/home_screen.dart' as _i12;
+import '../screens/BottomNavigationTab/profile_screen.dart' as _i14;
+import '../screens/BottomNavigationTab/reward_screen.dart' as _i15;
+import '../screens/BottomNavigationTab/setting_screen.dart' as _i16;
 import '../screens/add_new_card_screen.dart' as _i6;
 import '../screens/bottom_navigation.dart' as _i4;
 import '../screens/edit_profile_screen.dart' as _i9;

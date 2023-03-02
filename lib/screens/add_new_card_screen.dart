@@ -44,28 +44,29 @@ class AddNewCardScreen extends StatelessWidget {
                               color: Colors.grey,
                             ),
                           ),
-                          SizedBox(
-                            width: context.sW() / 9,
+                          // SizedBox(
+                          //   width: context.sW() / 50,
+                          // ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  // 'Hey Here',
+                                  AppLocalizations.of(context)!.hey_here,
+                                  style: Theme.of(context).textTheme.subtitle2,
+                                ),
+                                Text(
+                                    // 'Add New Card',
+                                    AppLocalizations.of(context)!.new_card,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .subtitle1
+                                        ?.copyWith(fontSize: 22, height: 1)),
+                              ],
+                            ),
                           ),
-                          Column(
-                            children: [
-                              Text(
-                                // 'Hey Here',
-                                AppLocalizations.of(context)!.hey_here,
-                                style: Theme.of(context).textTheme.subtitle2,
-                              ),
-                              Text(
-                                  // 'Add New Card',
-                                  AppLocalizations.of(context)!.new_card,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1
-                                      ?.copyWith(fontSize: 22, height: 1)),
-                            ],
-                          ),
-                          SizedBox(
-                            width: context.sW() / 6.5,
-                          ),
+
                           SizedBox(
                             height: context.sW() / 10,
                             width: context.sW() / 10,

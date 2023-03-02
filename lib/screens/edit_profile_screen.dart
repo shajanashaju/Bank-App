@@ -12,10 +12,11 @@ class EditProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 60,
+        toolbarHeight: 80,
         leading: Padding(
           padding: EdgeInsets.only(
-              left: context.sW() / 16, bottom: context.sW() / 16),
+            left: context.sW() / 20,
+          ),
           child: IconButton(
             onPressed: () {
               AutoRouter.of(context).pop();
@@ -32,6 +33,7 @@ class EditProfileScreen extends StatelessWidget {
             padding: EdgeInsets.only(
               left: context.sW() / 20,
               right: context.sW() / 10,
+              top: context.sW() / 20,
             ),
             child: Stack(
               children: [
@@ -219,6 +221,9 @@ class EditProfileScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
+                      textInputAction: TextInputAction.go,
+                      controller: TextEditingController()..text = 'John Deo',
+                      onChanged: (text) => {},
                     ),
                     SizedBox(
                       height: context.sW() / 30,
@@ -265,6 +270,10 @@ class EditProfileScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
+                      textInputAction: TextInputAction.go,
+                      controller: TextEditingController()
+                        ..text = 'johndeo@gmail.com',
+                      onChanged: (text) => {},
                     ),
                     SizedBox(
                       height: context.sW() / 30,
@@ -315,6 +324,10 @@ class EditProfileScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
+                      textInputAction: TextInputAction.go,
+                      controller: TextEditingController()
+                        ..text = '+98954175567',
+                      onChanged: (text) => {},
                     ),
                     SizedBox(
                       height: context.sW() / 30,
@@ -365,26 +378,34 @@ class EditProfileScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                       ),
+                      textInputAction: TextInputAction.go,
+                      controller: TextEditingController()..text = 'Martin',
+                      onChanged: (text) => {},
                     ),
                     SizedBox(
                       height: context.sW() / 20,
                     ),
                     Align(
                       alignment: Alignment.bottomCenter,
-                      child: Container(
-                        height: context.sW() / 10,
-                        width: context.sW() / 2,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 0, 0, 0),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Center(
-                          child: Text(
-                              // 'Save Informations',
-                              AppLocalizations.of(context)!.save_informations,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .subtitle2
-                                  ?.copyWith(color: Colors.white)),
+                      child: GestureDetector(
+                        onTap: () {
+                          AutoRouter.of(context).pop();
+                        },
+                        child: Container(
+                          height: context.sW() / 10,
+                          width: context.sW() / 2,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 0, 0, 0),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Center(
+                            child: Text(
+                                // 'Save Informations',
+                                AppLocalizations.of(context)!.save_informations,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .subtitle2
+                                    ?.copyWith(color: Colors.white)),
+                          ),
                         ),
                       ),
                     ),

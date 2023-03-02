@@ -5,7 +5,7 @@ import 'package:bankapp/router/router.gr.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../models/introlistmodel.dart';
+
 import '../widgets/intro_list.dart';
 
 class IntroScreen extends StatefulWidget {
@@ -16,7 +16,7 @@ class IntroScreen extends StatefulWidget {
 }
 
 class _IntroScreenState extends State<IntroScreen> {
-  final onboardData = [...InroListModels.getInroListModels()];
+  // final onboardData = [...InroListModels.getInroListModels()];
   PageController page = PageController(initialPage: 0);
   int pageIndex = 0;
 
@@ -44,20 +44,40 @@ class _IntroScreenState extends State<IntroScreen> {
                   SizedBox(
                     height: context.sH() / 1.4,
                     width: context.sW(),
-                    child: PageView.builder(
+                    child: PageView(
                       onPageChanged: (index) {
                         setState(() {
                           pageIndex = index;
                         });
                       },
-                      itemCount: 3,
-                      itemBuilder: (BuildContext context, int index) {
-                        return IntroList(
-                          image: onboardData[index].image,
-                          title: onboardData[index].title,
-                          content: onboardData[index].body,
-                        );
-                      },
+
+                      // itemBuilder: (BuildContext context, int index) {
+                      //   return IntroList(
+                      //     image: onboardData[index].image,
+                      //     title: onboardData[index].title,
+                      //     content: onboardData[index].body,
+                      //   );
+                      // },
+                      children: const [
+                        IntroList(
+                          image: 'assets/images/ad_banner_one.png',
+                          title: 'Transfer money Safer',
+                          content:
+                              'Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been',
+                        ),
+                        IntroList(
+                          image: 'assets/images/ad_banner_two.png',
+                          title: 'Transfer money Safer',
+                          content:
+                              'Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been',
+                        ),
+                        IntroList(
+                          image: 'assets/images/ad_banner_three.png',
+                          title: 'Transfer money Safer',
+                          content:
+                              'Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been',
+                        ),
+                      ],
                     ),
                   ),
                   SizedBox(

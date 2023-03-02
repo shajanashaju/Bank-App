@@ -18,16 +18,17 @@ class TransactionsScreen extends StatelessWidget {
           headerSliverBuilder: (context, innerBoxIsScrolled) {
             return [
               SliverAppBar(
-                // titleSpacing: 0,
+                titleSpacing: 0,
                 expandedHeight: context.sW() / 3,
                 floating: false,
                 pinned: true,
+                // toolbarHeight: context.sW() / 50,
                 automaticallyImplyLeading: false,
                 flexibleSpace: FlexibleSpaceBar(
                   titlePadding: EdgeInsets.zero,
                   expandedTitleScale: 1,
                   title: Padding(
-                    padding: EdgeInsets.only(left: context.sW() / 16),
+                    padding: EdgeInsets.only(left: context.sW() / 25),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -102,30 +103,33 @@ class TransactionsScreen extends StatelessWidget {
                                   color: Colors.grey,
                                 ),
                               ),
-                              SizedBox(
-                                width: context.sW() / 10,
-                              ),
-                              Column(
-                                children: [
-                                  Text(
-                                    // 'Your Recent',
-                                    AppLocalizations.of(context)!.your_recents,
-                                    style:
-                                        Theme.of(context).textTheme.subtitle2,
-                                  ),
-                                  Text(
-                                      // 'Transactions',
+                              // SizedBox(
+                              //   width: context.sW() / 50,
+                              // ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      // 'Your Recent',
                                       AppLocalizations.of(context)!
-                                          .transactions,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle1
-                                          ?.copyWith(fontSize: 22, height: 1)),
-                                ],
+                                          .your_recents,
+                                      style:
+                                          Theme.of(context).textTheme.subtitle2,
+                                    ),
+                                    Text(
+                                        // 'Transactions',
+                                        AppLocalizations.of(context)!
+                                            .transactions,
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .subtitle1
+                                            ?.copyWith(
+                                                fontSize: 22, height: 1)),
+                                  ],
+                                ),
                               ),
-                              SizedBox(
-                                width: context.sW() / 8,
-                              ),
+
                               SizedBox(
                                 height: context.sW() / 10,
                                 width: context.sW() / 10,

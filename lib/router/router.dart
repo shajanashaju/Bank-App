@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:bankapp/BottomNavigationTab/profile_screen.dart';
-import 'package:bankapp/BottomNavigationTab/reward_screen.dart';
-import 'package:bankapp/BottomNavigationTab/setting_screen.dart';
+import 'package:bankapp/screens/BottomNavigationTab/profile_screen.dart';
+import 'package:bankapp/screens/BottomNavigationTab/reward_screen.dart';
+import 'package:bankapp/screens/BottomNavigationTab/setting_screen.dart';
 import 'package:bankapp/screens/add_new_card_screen.dart';
 import 'package:bankapp/screens/bottom_navigation.dart';
-import 'package:bankapp/BottomNavigationTab/card_setting_screen.dart';
-import 'package:bankapp/BottomNavigationTab/home_screen.dart';
+import 'package:bankapp/screens/BottomNavigationTab/card_setting_screen.dart';
+import 'package:bankapp/screens/BottomNavigationTab/home_screen.dart';
 import 'package:bankapp/screens/edit_profile_screen.dart';
 import 'package:bankapp/screens/notification_screen.dart';
 import 'package:bankapp/screens/send_money_profile.dart';

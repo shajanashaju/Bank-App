@@ -1,4 +1,3 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:bankapp/context.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +16,7 @@ class SettingScreen extends StatelessWidget {
             expandedHeight: context.sW() / 3,
             floating: false,
             pinned: true,
-            toolbarHeight: context.sW() / 4,
+            toolbarHeight: context.sW() / 5.3,
             automaticallyImplyLeading: false,
             flexibleSpace: FlexibleSpaceBar(
               expandedTitleScale: 1,
@@ -63,7 +62,7 @@ class SettingScreen extends StatelessWidget {
               collapseMode: CollapseMode.parallax,
               background: Padding(
                 padding: EdgeInsets.only(
-                  left: context.sW() / 30,
+                  left: context.sW() / 16,
                   right: context.sW() / 16,
                   top: context.sW() / 40,
                 ),
@@ -71,21 +70,10 @@ class SettingScreen extends StatelessWidget {
                   children: [
                     SafeArea(
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          IconButton(
-                            onPressed: () {
-                              AutoRouter.of(context).pop();
-                            },
-                            icon: const Icon(
-                              Icons.skip_previous_outlined,
-                              color: Colors.grey,
-                            ),
-                          ),
-                          SizedBox(
-                            width: context.sW() / 6,
-                          ),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 // 'Bill Pay',
@@ -100,9 +88,6 @@ class SettingScreen extends StatelessWidget {
                                       .subtitle1
                                       ?.copyWith(fontSize: 22, height: 1)),
                             ],
-                          ),
-                          SizedBox(
-                            width: context.sW() / 6.5,
                           ),
                           SizedBox(
                             height: context.sW() / 10,
@@ -125,7 +110,7 @@ class SettingScreen extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: context.sW() / 10),
+              padding: EdgeInsets.symmetric(horizontal: context.sW() / 12),
               child: Column(
                 children: [
                   SizedBox(
@@ -137,7 +122,7 @@ class SettingScreen extends StatelessWidget {
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -172,13 +157,13 @@ class SettingScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        width: context.sW() / 15,
+                        width: context.sW() / 30,
                       ),
                       Align(
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -198,28 +183,32 @@ class SettingScreen extends StatelessWidget {
                               SizedBox(
                                 height: context.sW() / 50,
                               ),
-                              Text(
-                                  // 'E-Commerce',
-                                  AppLocalizations.of(context)!.ecommerce,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1
-                                      ?.copyWith(
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 12,
-                                          height: 1.5)),
+                              SizedBox(
+                                width: context.sW() / 7,
+                                child: Text(
+                                    textAlign: TextAlign.center,
+                                    // 'E-Commerce',
+                                    AppLocalizations.of(context)!.ecommerce,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .subtitle1
+                                        ?.copyWith(
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 12,
+                                            height: 1)),
+                              ),
                             ],
                           ),
                         ),
                       ),
                       SizedBox(
-                        width: context.sW() / 15,
+                        width: context.sW() / 30,
                       ),
                       Align(
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -256,7 +245,7 @@ class SettingScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: context.sW() / 20,
+                    height: context.sW() / 30,
                   ),
                   Row(
                     children: [
@@ -264,7 +253,7 @@ class SettingScreen extends StatelessWidget {
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -299,13 +288,13 @@ class SettingScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        width: context.sW() / 15,
+                        width: context.sW() / 30,
                       ),
                       Align(
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -340,13 +329,13 @@ class SettingScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        width: context.sW() / 15,
+                        width: context.sW() / 30,
                       ),
                       Align(
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -383,7 +372,7 @@ class SettingScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: context.sW() / 20,
+                    height: context.sW() / 30,
                   ),
                   Row(
                     children: [
@@ -391,7 +380,7 @@ class SettingScreen extends StatelessWidget {
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -426,13 +415,13 @@ class SettingScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        width: context.sW() / 15,
+                        width: context.sW() / 30,
                       ),
                       Align(
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -467,13 +456,13 @@ class SettingScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        width: context.sW() / 15,
+                        width: context.sW() / 30,
                       ),
                       Align(
                         alignment: Alignment.topLeft,
                         child: Container(
                           height: context.sH() / 9,
-                          width: context.sW() / 4.5,
+                          width: context.sW() / 4,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: const [
@@ -810,6 +799,11 @@ class SettingScreen extends StatelessWidget {
                                             color: Colors.black,
                                             borderRadius:
                                                 BorderRadius.circular(10)),
+                                        child: const Icon(
+                                          Icons.check,
+                                          color: Colors.white,
+                                          size: 22,
+                                        ),
                                       ),
                                       SizedBox(
                                         width: context.sW() / 25,
@@ -924,6 +918,9 @@ class SettingScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: context.sW() / 4,
                   ),
                 ],
               ),

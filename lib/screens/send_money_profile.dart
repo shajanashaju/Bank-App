@@ -13,9 +13,11 @@ class SendMoneyProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 80,
+        toolbarHeight: 50,
         leading: Padding(
-          padding: EdgeInsets.only(left: context.sW() / 16),
+          padding: EdgeInsets.only(
+            left: context.sW() / 16,
+          ),
           child: IconButton(
             onPressed: () {
               AutoRouter.of(context).pop();
@@ -27,29 +29,30 @@ class SendMoneyProfile extends StatelessWidget {
             ),
           ),
         ),
-        title: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                // 'Hy Here',
-                AppLocalizations.of(context)!.hy_here,
-                style: Theme.of(context).textTheme.subtitle2,
-              ),
-              Text(
-                  // 'Send Money',
-                  AppLocalizations.of(context)!.send_money,
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle1
-                      ?.copyWith(fontSize: 22, height: 1)),
-            ],
-          ),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              // 'Hy Here',
+              AppLocalizations.of(context)!.hy_here,
+              style: Theme.of(context).textTheme.subtitle2,
+            ),
+            Text(
+                // 'Send Money',
+                AppLocalizations.of(context)!.send_money,
+                style: Theme.of(context)
+                    .textTheme
+                    .subtitle1
+                    ?.copyWith(fontSize: 22, height: 1)),
+          ],
         ),
         actions: [
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: context.sW() / 15, vertical: context.sW() / 50),
+            padding: EdgeInsets.only(
+              left: context.sW() / 20,
+              right: context.sW() / 10,
+              top: context.sW() / 30,
+            ),
             child: Stack(
               children: [
                 GestureDetector(

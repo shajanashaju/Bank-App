@@ -3,7 +3,8 @@ import 'package:bankapp/context.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../router/router.gr.dart';
+import '../../router/router.gr.dart';
+import '../../widgets/profiledetails.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -20,26 +21,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 60,
-        leading: Padding(
-          padding: EdgeInsets.only(
-              left: context.sW() / 16, bottom: context.sW() / 16),
-          child: IconButton(
-            onPressed: () {
-              AutoRouter.of(context).pop();
-            },
-            icon: const Icon(
-              Icons.skip_previous_outlined,
-              color: Colors.grey,
-              size: 25,
-            ),
-          ),
-        ),
+        toolbarHeight: 80,
+        // leading: Padding(
+        //   padding: EdgeInsets.only(
+        //     left: context.sW() / 20,
+        //   ),
+        //   child: IconButton(
+        //     onPressed: () {
+        //       AutoRouter.of(context).pop();
+        //     },
+        //     icon: const Icon(
+        //       Icons.skip_previous_outlined,
+        //       color: Colors.grey,
+        //       size: 25,
+        //     ),
+        //   ),
+        // ),
+        automaticallyImplyLeading: false,
         actions: [
           Padding(
             padding: EdgeInsets.only(
               left: context.sW() / 20,
               right: context.sW() / 10,
+              top: context.sW() / 30,
             ),
             child: Stack(
               children: [
@@ -186,147 +190,37 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             SizedBox(
                               height: context.sW() / 20,
                             ),
-                            Row(
-                              children: [
-                                Text(
-                                  // 'Account Number',
-                                  AppLocalizations.of(context)!.account_number,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w500),
-                                ),
-                                const Spacer(),
-                                Text(
-                                  '3456722029',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                        color: const Color(0xFF4160A9),
-                                      ),
-                                ),
-                              ],
+                            const ProfileDetails(
+                              title: 'Account Number',
+                              content: '3456722029',
                             ),
                             SizedBox(
                               height: context.sW() / 40,
                             ),
-                            Row(
-                              children: [
-                                Text(
-                                  // 'Username',
-                                  AppLocalizations.of(context)!.username,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w500),
-                                ),
-                                const Spacer(),
-                                Text(
-                                  'john.deo1',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                        color: const Color(0xFF4160A9),
-                                      ),
-                                ),
-                              ],
+                            const ProfileDetails(
+                              title: 'User Name',
+                              content: 'john.deo1',
                             ),
                             SizedBox(
                               height: context.sW() / 40,
                             ),
-                            Row(
-                              children: [
-                                Text(
-                                  // 'Email',
-                                  AppLocalizations.of(context)!.email,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w500),
-                                ),
-                                const Spacer(),
-                                Text(
-                                  'johndeo@gmail.com',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                        color: const Color(0xFF4160A9),
-                                      ),
-                                ),
-                              ],
+                            const ProfileDetails(
+                              title: 'Email',
+                              content: 'johndeo@gmail.com',
                             ),
                             SizedBox(
                               height: context.sW() / 40,
                             ),
-                            Row(
-                              children: [
-                                Text(
-                                  // 'Mobile Number',
-                                  AppLocalizations.of(context)!.mobile_number,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w500),
-                                ),
-                                const Spacer(),
-                                Text(
-                                  '+98954175567',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                        color: const Color(0xFF4160A9),
-                                      ),
-                                ),
-                              ],
+                            const ProfileDetails(
+                              title: 'Mobile Number',
+                              content: '+98954175567',
                             ),
                             SizedBox(
                               height: context.sW() / 40,
                             ),
-                            Row(
-                              children: [
-                                Text(
-                                  // 'Address',
-                                  AppLocalizations.of(context)!.address,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w500),
-                                ),
-                                const Spacer(),
-                                Text(
-                                  'Park Avenue 2nd',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle2
-                                      ?.copyWith(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                        color: const Color(0xFF4160A9),
-                                      ),
-                                ),
-                              ],
+                            const ProfileDetails(
+                              title: 'Address',
+                              content: 'Park Avenue 2nd',
                             ),
                           ],
                         ),
@@ -512,6 +406,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: context.sW() / 4,
               ),
             ],
           ),
